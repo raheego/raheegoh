@@ -1,0 +1,14 @@
+{
+  "name": "raheegoh",
+  "version": "0.1.0",
+  "description": "raheegoh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "raheegoh"
+  ],
+  "author": "gohrahee",
+  "license": "ISC"
+}
