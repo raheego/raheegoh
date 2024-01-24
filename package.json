@@ -12,6 +12,6 @@
   "author": "gohrahee",
   "license": "ISC",
     "bin": {
-    "pysatellite": "./index.js"
+    "raheegoh": "./index.js"
   }
 }
