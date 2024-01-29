@@ -64,6 +64,7 @@ console.log(`
 
 `);
 
+
 class RandomPresenter {
   constructor(...argv) {
     // 발표자 목록 중에서 실제 발표자 정보만 추려냄
@@ -82,5 +83,4 @@ class RandomPresenter {
 const presenter = new RandomPresenter();
 
 // 랜덤 발표자 출력
-presenter.print();
- 
+presenter.print(); 
