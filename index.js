@@ -67,7 +67,7 @@ console.log(`
 class RandomPresenter {
   constructor(...argv) {
     // 발표자 목록 중에서 실제 발표자 정보만 추려냄
-    this.speakers = argv.slice(2);
+    this.speakers = argv.length > 0 ? argv.slice(2) : process.argv.slice(2);
   }
 
   print() {
