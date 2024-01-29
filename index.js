@@ -64,29 +64,23 @@ console.log(`
 
 `);
 
-class Random{
-    constructor(){
-        this.argv = argv;
-        this.length = argv.length;
-    }
-};
+class RandomPresenter {
+  constructor(...argv) {
+    // 발표자 목록 중에서 실제 발표자 정보만 추려냄
+    this.speakers = argv.slice(2);
+  }
 
-class RandomPR extends Random{
-    constructor(){
-        super();
-    }
-    print(){
-        const list = this.argv.slice(2);
-        if (list.length === 0){
-            console.log('발표자가 비워있습니다.')
-        }else{
-            const n = Math.floor(Math.random() * list.length)
-            console.log(`발표자 : ${list[n]}`)
-        };
-    };
-};
-1
-const argv = process.argv;
-const List = new RandomPR(argv);
-List.print();
+  print() {
+    // 발표자 목록이 비어있으면 에러 메시지 출력, 그렇지 않으면 랜덤하게 발표자 선택 후 출력
+    this.speakers.length === 0
+      ? console.log('발표자가 비워져 있습니다.')
+      : console.log(`발표자: ${this.speakers[Math.floor(Math.random() * this.speakers.length)]}`);
+  }
+}
+
+// RandomPresenter 객체 생성
+const presenter = new RandomPresenter();
+
+// 랜덤 발표자 출력
+presenter.print();
 
