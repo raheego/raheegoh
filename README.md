@@ -1,7 +1,8 @@
 ### USE
 ```bash
-$ npm install -g raheego
-$ raheego
+$ npm install -g raheegoh
+$ raheegoh
+$ raheegoh [발표자1] [발표자2] [발표자3] ...
 ```
 
 ### DEV STACK
