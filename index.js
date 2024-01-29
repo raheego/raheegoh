@@ -83,4 +83,4 @@ const presenter = new RandomPresenter();
 
 // 랜덤 발표자 출력
 presenter.print();
-
+ 
